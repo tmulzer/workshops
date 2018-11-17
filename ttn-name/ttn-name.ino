@@ -43,6 +43,15 @@
 // Was soll übertragen werden?
 #define NAME "Mein Name"
 
+/* Decoder für die TTN-Console
+function Decoder(bytes, port) {
+  // Decode plain text; for testing only 
+  return {
+      String: String.fromCharCode.apply(null, bytes)
+  };
+}
+*/
+
 // Die folgenden Schlüssel liefert TTN bei Anmeldung über ABP
 // TTN-Konsole Anwendung anlegen, device anlegen, Settings, ABP, generiert Schlüssel und Device-ID
 
@@ -195,6 +204,7 @@ void setup() {
     // Set static session parameters. Instead of dynamically establishing a session
     // by joining the network, precomputed session parameters are be provided.
     #ifdef PROGMEM
+    Serial.println("PROGMEM");
     // On AVR, these values are stored in flash and only copied to RAM
     // once. Copy them to a temporary buffer here, LMIC_setSession will
     // copy them into a buffer of its own again.
