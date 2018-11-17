@@ -1,7 +1,8 @@
 # Workshops
-Material für Workshops der Technologiestiftung Berlin
+Material für Workshops der Beuth Hochschule für Technik.
+Grundlage sind die Workshops der Technologiestiftung Berlin.
 
-## LoRaWAN Bastelstunde, 20.04.2018
+## LoRaWAN Bastelstunde, 21./22.11.2018
 
 LoRaWAN mit dem Arduino, Beispiele für den Workshop
 
