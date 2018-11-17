@@ -1,5 +1,6 @@
 # Workshops
-Material für Workshops der Beuth Hochschule für Technik.
+Material für Workshops an der Beuth Hochschule für Technik.
+
 Grundlage sind die Workshops der Technologiestiftung Berlin.
 
 ## LoRaWAN Bastelstunde, 21./22.11.2018
