@@ -38,25 +38,25 @@
 // TTN-Konsole Anwendung anlegen, device anlegen, Settings, ABP, generiert Schlüssel und Device-ID
 
 // LoRaWAN NwkSKey, network session key (msb-Array of unsigned byte)
-//static const PROGMEM u1_t NWKSKEY[16] = { 0xBA, 0x38, 0xDB, 0x49, 0x4C, 0x9D, 0x39, 0xED, 0xD1, 0xE5, 0x67, 0xE7, 0x9E, 0x60, 0xEE, 0x8E };
-static const PROGMEM u1_t NWKSKEY[16] = <NwkSKey>;
+static const PROGMEM u1_t NWKSKEY[16] = { 0xBA, 0x38, 0xDB, 0x49, 0x4C, 0x9D, 0x39, 0xED, 0xD1, 0xE5, 0x67, 0xE7, 0x9E, 0x60, 0xEE, 0x8E };
+//static const PROGMEM u1_t NWKSKEY[16] = <NwkSKey>;
 
 // LoRaWAN AppSKey, application session key (msb-Array of unsigned byte)
-//static const u1_t PROGMEM APPSKEY[16] = { 0xFB, 0xFE, 0x6B, 0x85, 0x7D, 0xEE, 0xDD, 0xFE, 0x48, 0xA4, 0x12, 0x8A, 0xBF, 0x7C, 0x40, 0x97 };
-static const u1_t PROGMEM APPSKEY[16] = <AppSKey>;
+static const u1_t PROGMEM APPSKEY[16] = { 0xFB, 0xFE, 0x6B, 0x85, 0x7D, 0xEE, 0xDD, 0xFE, 0x48, 0xA4, 0x12, 0x8A, 0xBF, 0x7C, 0x40, 0x97 };
+//static const u1_t PROGMEM APPSKEY[16] = <AppSKey>;
 
 // LoRaWAN end-device address (DevAddr)
 // See http://thethingsnetwork.org/wiki/AddressSpace
 // The library converts the address to network byte order as needed.
 // ACHTUNG DEVICE ADRESSE MIT PRÄFIX 0x eingeben
 // Syntaxbeispiel:  static const u4_t DEVADDR = 0x26011FB4; zu finden in TTN | Console | Application | device | overview | Device Adress
-//static const u4_t DEVADDR = 0x26011E35 ; // <-- Change this address for every node!
-static const u4_t DEVADDR = 0x<DevAddr> ;
+static const u4_t DEVADDR = 0x26011E35 ; // <-- Change this address for every node!
+//static const u4_t DEVADDR = 0x<DevAddr> ;
 
 // Die vorstehenden Schlüssel sind fake und stehen hier als Kontrolle für die Syntax 
 
-//int id = 3; // zusätzliche ID, die vom Node gesendet wird
-int id = <id>; 
+int id = 3; // zusätzliche ID, die vom Node gesendet wird
+//int id = <id>; 
 
 //****************************************
 
